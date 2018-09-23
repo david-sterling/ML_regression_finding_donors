@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="occupation_ Exec-managerial <= 0.5\ngini = 0.37\nsamples = 22868\nvalue = [27230, 8947]\nclass = -50k", fillcolor="#e58139ab"] ;
+1 [label="relationship_ Own-child <= 0.5\ngini = 0.33\nsamples = 19801\nvalue = [24787, 6622]\nclass = -50k", fillcolor="#e58139bb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="capital-gain <= 0.74\ngini = 0.37\nsamples = 16630\nvalue = [19809, 6543]\nclass = -50k", fillcolor="#e58139ab"] ;
+1 -> 2 ;
+3 [label="gini = 0.34\nsamples = 15840\nvalue = [19743, 5345]\nclass = -50k", fillcolor="#e58139ba"] ;
+2 -> 3 ;
+4 [label="gini = 0.1\nsamples = 790\nvalue = [66, 1198]\nclass = +50k", fillcolor="#399de5f1"] ;
+2 -> 4 ;
+5 [label="marital-status_ Never-married <= 0.5\ngini = 0.03\nsamples = 3171\nvalue = [4978, 79]\nclass = -50k", fillcolor="#e58139fb"] ;
+1 -> 5 ;
+6 [label="gini = 0.12\nsamples = 332\nvalue = [489, 35]\nclass = -50k", fillcolor="#e58139ed"] ;
+5 -> 6 ;
+7 [label="gini = 0.02\nsamples = 2839\nvalue = [4489, 44]\nclass = -50k", fillcolor="#e58139fd"] ;
+5 -> 7 ;
+8 [label="education_level_ HS-grad <= 0.5\ngini = 0.5\nsamples = 3067\nvalue = [2443, 2325]\nclass = -50k", fillcolor="#e581390c"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="capital-gain <= 0.77\ngini = 0.5\nsamples = 2458\nvalue = [1835, 2012]\nclass = +50k", fillcolor="#399de516"] ;
+8 -> 9 ;
+10 [label="gini = 0.5\nsamples = 2205\nvalue = [1834, 1618]\nclass = -50k", fillcolor="#e581391e"] ;
+9 -> 10 ;
+11 [label="gini = 0.01\nsamples = 253\nvalue = [1, 394]\nclass = +50k", fillcolor="#399de5fe"] ;
+9 -> 11 ;
+12 [label="marital-status_ Married-civ-spouse <= 0.5\ngini = 0.45\nsamples = 609\nvalue = [608, 313]\nclass = -50k", fillcolor="#e581397c"] ;
+8 -> 12 ;
+13 [label="gini = 0.16\nsamples = 259\nvalue = [360, 34]\nclass = -50k", fillcolor="#e58139e7"] ;
+12 -> 13 ;
+14 [label="gini = 0.5\nsamples = 350\nvalue = [248, 279]\nclass = +50k", fillcolor="#399de51c"] ;
+12 -> 14 ;
+}

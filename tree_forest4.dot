@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="sex_ Female <= 0.5\ngini = 0.37\nsamples = 22809\nvalue = [27276, 8901]\nclass = -50k", fillcolor="#e58139ac"] ;
+1 [label="hours-per-week <= 0.42\ngini = 0.43\nsamples = 15439\nvalue = [16917, 7617]\nclass = -50k", fillcolor="#e581398c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="relationship_ Not-in-family <= 0.5\ngini = 0.36\nsamples = 9895\nvalue = [12024, 3724]\nclass = -50k", fillcolor="#e58139b0"] ;
+1 -> 2 ;
+3 [label="gini = 0.4\nsamples = 7820\nvalue = [9043, 3446]\nclass = -50k", fillcolor="#e581399e"] ;
+2 -> 3 ;
+4 [label="gini = 0.16\nsamples = 2075\nvalue = [2981, 278]\nclass = -50k", fillcolor="#e58139e7"] ;
+2 -> 4 ;
+5 [label="education-num <= 0.77\ngini = 0.49\nsamples = 5544\nvalue = [4893, 3893]\nclass = -50k", fillcolor="#e5813934"] ;
+1 -> 5 ;
+6 [label="gini = 0.43\nsamples = 3564\nvalue = [3912, 1780]\nclass = -50k", fillcolor="#e581398b"] ;
+5 -> 6 ;
+7 [label="gini = 0.43\nsamples = 1980\nvalue = [981, 2113]\nclass = +50k", fillcolor="#399de589"] ;
+5 -> 7 ;
+8 [label="marital-status_ Never-married <= 0.5\ngini = 0.2\nsamples = 7370\nvalue = [10359, 1284]\nclass = -50k", fillcolor="#e58139df"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="capital-gain <= 0.77\ngini = 0.27\nsamples = 4152\nvalue = [5526, 1080]\nclass = -50k", fillcolor="#e58139cd"] ;
+8 -> 9 ;
+10 [label="gini = 0.24\nsamples = 4020\nvalue = [5514, 879]\nclass = -50k", fillcolor="#e58139d6"] ;
+9 -> 10 ;
+11 [label="gini = 0.11\nsamples = 132\nvalue = [12, 201]\nclass = +50k", fillcolor="#399de5f0"] ;
+9 -> 11 ;
+12 [label="occupation_ Sales <= 0.5\ngini = 0.08\nsamples = 3218\nvalue = [4833, 204]\nclass = -50k", fillcolor="#e58139f4"] ;
+8 -> 12 ;
+13 [label="gini = 0.09\nsamples = 2698\nvalue = [4009, 188]\nclass = -50k", fillcolor="#e58139f3"] ;
+12 -> 13 ;
+14 [label="gini = 0.04\nsamples = 520\nvalue = [824, 16]\nclass = -50k", fillcolor="#e58139fa"] ;
+12 -> 14 ;
+}
